@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    var kint1 = 7.14125
+    console.log("nesuapvalinta reikšmė: " + kint1);
+    kint1 = kint1.toFixed (2);
+    console.log("suapvalinta reikšmė: var A: " + kint1);
+    kint1 = 7.14125
+    kint1 = Math.round(kint1*100) / 100;
+    console.log("suapvalinta reikšmė: var B: " + kint1);
+    
+    var kint2, kint3;
+    var txt_A = "0 - 4 užduotis: ";
+
+    console.log((Math.round(Math.random(kint2)*5)));
+    console.log(txt_A + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
+    console.log(txt_A + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
+
+
+    let kmin = 16;
+    let kmax = 40;
+    let txt_b = "užduotis: skaičiai nuo 16 iki 40";
+    
+    console.log(txt_b);
+    kint10 = kmin + Math.floor(Math.random() * (1 + kmax - kmin));
+    console.log(kint10);
+    kint11 = kmin + Math.floor(Math.random() * (1 + kmax - kmin));
+    console.log(kint11);
+    if (kint10 > kint11){
+        console.log( (kint10 / kint11).toFixed(2) );
+    }
+    else{ 
+        console.log( (kint11/kint10).toFixed(2) );
+    }
+
+    let lmin = 0;
+    let lmax = 25;
+    let txt_c = "užduotis: 3 skaičiai nuo 0 iki 25";
+    
+    console.log(txt_c);
+    kint20 = lmin + Math.floor(Math.random() * (1 + lmax - lmin));
+    console.log("raw1 " + kint20);
+    kint21 = lmin + Math.floor(Math.random() * (1 + lmax - lmin));
+    console.log("raw2 " + kint21);
+    kint22 = lmin + Math.floor(Math.random() * (1 + lmax - lmin));
+    console.log("raw3 " + kint22);
+
+    if ( kint20==kint21 || kint21==kint22 || kint20==kint22) {
+        console.log ("bent du skaičiai sutampa.");
+    }
+
+    if ( (kint20 > kint21 && kint20 < kint22) || (kint20 < kint21 && kint20 > kint22) ) {
+        console.log(kint20);
+    }
+    
+    if ( (kint21 > kint20 && kint21 < kint22) || (kint21 < kint20 && kint21 > kint22) ) {
+        console.log(kint21);
+    }
+        
+    if ( (kint22 > kint21 && kint22 < kint20) || (kint22 < kint21 && kint22 > kint20) ) {
+        console.log(kint22);
+    }
+
+    let xmin = 1;
+    let xmax = 10;
+    let txt_d = "užduotis: trikampio kraštinės";
+    
+    console.log(txt_d);
+    kr_a = xmin + Math.floor(Math.random() * (1 + xmax - xmin));
+    kr_b = xmin + Math.floor(Math.random() * (1 + xmax - xmin));
+    kr_c = xmin + Math.floor(Math.random() * (1 + xmax - xmin));
+    console.log("kr_a: " + kr_a + " ;kr_b: " + kr_b + " ;kr_c: " + kr_c);
+    
+
+    if ( kr_a==kr_b  || kr_b==kr_c || kr_a==kr_c) {
+        console.log ("bent dviejų kraštinių ilgiai sutampa.");
+    }
+    else{
+        if ( (kr_a + kr_b > kr_c) && (kr_a + kr_c > kr_b) && (kr_b + kr_c > kr_a) ) {
+        console.log ("turim trikampį.");
+            } 
+            else{
+            console.log ("neturim trikampio.");    
+                }
+            }
+       
+
+</script>
