@@ -33,8 +33,8 @@
     var txt_A = "--- atsitiktinių skaičių nuo 0 - 4 generavimas ---";
 
     console.log(txt_A);
-    console.log("rezultatas a: " + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
-    console.log("rezultatas b: " + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
+    console.log("ats. skaičius a: " + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
+    console.log("ats. skaičius b: " + ( (Math.random(kint2)*4 - (Math.random(kint3)/4) ) ) );
 
     /* 2 atsitiktinių skaičių nuo 16 iki 40 generavimas */   
 
@@ -44,14 +44,14 @@
     
     console.log(txt_b);
     kint10 = kmin + Math.floor(Math.random() * (1 + kmax - kmin));
-    console.log("rezultatas a: " + kint10);
+    console.log("ats. skaičius a: " + kint10);
     kint11 = kmin + Math.floor(Math.random() * (1 + kmax - kmin));
-    console.log("rezultatas b: " + kint11);
+    console.log("ats. skaičius b: " + kint11);
     if (kint10 > kint11){
-        console.log( "rezultatas: " + (kint10 / kint11).toFixed(2) );
+        console.log( "rezultatas - max/ min: " + (kint10 / kint11).toFixed(2) );
     }
     else{ 
-        console.log( "rezultatas: " + (kint11/kint10).toFixed(2) );
+        console.log( "rezultatas - max/ min: " + (kint11/kint10).toFixed(2) );
     }
 
 
